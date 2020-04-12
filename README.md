@@ -2,6 +2,7 @@
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/lukashass/snapcast)
 ![Docker Pulls](https://img.shields.io/docker/pulls/lukashass/snapcast)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lukashass/snapcast/latest)
 
 ## Deployment example
 
