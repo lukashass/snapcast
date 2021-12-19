@@ -1,6 +1,6 @@
 # Snapcast Docker Image
 
-[![Build Image using Containerfile](https://github.com/lukashass/snapcast/actions/workflows/build.yml/badge.svg)](https://github.com/lukashass/snapcast/actions/workflows/build.yml)
+[![Build Image](https://github.com/lukashass/snapcast/actions/workflows/build.yml/badge.svg)](https://github.com/lukashass/snapcast/actions/workflows/build.yml)
 
 A docker image containing [Snapcast](https://github.com/badaix/snapcast) (__only the server__) with librespot support
 
