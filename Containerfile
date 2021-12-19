@@ -1,4 +1,4 @@
-FROM rust:1.48.0-slim-buster
+FROM rust:1.57.0-slim-buster
 
 RUN apt update \
     && apt install -y git
@@ -7,13 +7,13 @@ WORKDIR /build
 
 RUN git clone https://github.com/librespot-org/librespot.git \
     && cd librespot \
-    && git checkout 6a4bc83259dd723dfecce073c363be84f31565d9 \
+    && git checkout v0.3.1 \
     && cargo build --release --no-default-features
 
 
-FROM debian:buster-slim
+FROM debian:bullseye-slim
 
-ENV SNAPCAST_VERSION=0.24.0
+ENV SNAPCAST_VERSION=0.25.0
 
 RUN apt update \
     && apt install -y wget
