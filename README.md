@@ -1,8 +1,6 @@
 # Snapcast Docker Image
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/lukashass/snapcast)
-![Docker Pulls](https://img.shields.io/docker/pulls/lukashass/snapcast)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/lukashass/snapcast/latest)
+[![Build Image using Containerfile](https://github.com/lukashass/snapcast/actions/workflows/build.yml/badge.svg)](https://github.com/lukashass/snapcast/actions/workflows/build.yml)
 
 A docker image containing [Snapcast](https://github.com/badaix/snapcast) (__only the server__) with librespot support
 
@@ -15,7 +13,7 @@ version: '3'
 
 services:
   server:
-    image: lukashass/snapcast
+    image: ghcr.io/lukashass/snapcast
     restart: always
     ports:
       - 1704:1704
