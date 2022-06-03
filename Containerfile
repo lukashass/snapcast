@@ -13,7 +13,7 @@ RUN git clone https://github.com/librespot-org/librespot.git \
 
 FROM debian:bullseye-slim
 
-ENV SNAPCAST_VERSION=0.25.0
+ENV SNAPCAST_VERSION=0.26.0
 
 RUN apt update \
     && apt install -y wget
