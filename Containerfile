@@ -7,7 +7,7 @@ WORKDIR /build
 
 RUN git clone https://github.com/librespot-org/librespot.git \
     && cd librespot \
-    && git checkout v0.4.1 \
+    && git checkout v0.4.2 \
     && cargo build --release --no-default-features
 
 
