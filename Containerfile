@@ -1,4 +1,4 @@
-FROM rust:1.57.0-slim-buster
+FROM rust:1.63.0-slim-bullseye
 
 RUN apt update \
     && apt install -y git
@@ -16,7 +16,7 @@ FROM debian:bullseye-slim
 ENV SNAPCAST_VERSION=0.26.0
 
 RUN apt update \
-    && apt install -y wget
+    && apt install -y wget shairport-sync
 
 RUN wget https://github.com/badaix/snapcast/releases/download/v${SNAPCAST_VERSION}/snapserver_${SNAPCAST_VERSION}-1_amd64.deb
 
